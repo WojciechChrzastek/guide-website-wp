@@ -1,3 +1,3 @@
-# guide-website-wp
+# guide-website-wp-theme
 
-WordPress custom theme website for tour guide build upon clean wp installation.
+WordPress custom theme for tour guide website build upon clean wp installation.
