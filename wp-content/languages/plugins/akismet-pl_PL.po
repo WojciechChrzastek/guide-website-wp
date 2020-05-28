@@ -2,18 +2,58 @@
 # This file is distributed under the same license as the Plugins - Akismet Anti-Spam - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-02-22 10:48:53+0000\n"
+"PO-Revision-Date: 2020-05-18 10:15:09+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: GlotPress/2.4.0-alpha\n"
+"Plural-Forms: nplurals=3; plural=(n == 1) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/3.0.0-alpha\n"
 "Language: pl\n"
 "Project-Id-Version: Plugins - Akismet Anti-Spam - Stable (latest release)\n"
 
+#: class.akismet-admin.php:682
+msgid "No comment history."
+msgstr "Brak historii komentarza."
+
+#: class.akismet-admin.php:650
+msgid "Akismet was unable to recheck this comment."
+msgstr "Akismet nie mógł ponownie sprawdzić komentarza."
+
+#: class.akismet-admin.php:642
+msgid "Akismet was unable to check this comment but will automatically retry later."
+msgstr "Akismet nie mógł ponownie sprawdzić komentarza, ale później zrobi to automatycznie."
+
+#: class.akismet-admin.php:613
+msgid "Comment was caught by %s."
+msgstr "Komentarz został przechwycony przez %s."
+
+#: class.akismet.php:552
+msgid "Akismet is not configured. Please enter an API key."
+msgstr "Akismet nie jest skonfigurowany. Proszę dodać klucz API."
+
+#: views/enter.php:8
+msgid "Enter your API key"
+msgstr "Wprowadź klucz API"
+
+#: views/connect-jp.php:66
+msgid "Set up a different account"
+msgstr "Skonfiguruj inne konto"
+
+#: views/setup.php:2
+msgid "Set up your Akismet account to enable spam filtering on this site."
+msgstr "Skonfiguruj konto Akismet, żeby włączyć ochronę przed spamem na tej witrynie."
+
+#: class.akismet-admin.php:1085
+msgid "Akismet could not recheck your comments for spam."
+msgstr "Akismet nie był w stanie przeanalizować komentarzy pod kątem spamu."
+
+#: class.akismet-admin.php:435
+msgid "You don't have permission to do that."
+msgstr "Nie posiadasz uprawnienia do wykonania tej operacji."
+
 #: class.akismet-cli.php:165
 msgid "Stats response could not be decoded."
-msgstr "Niezrozumiała odpowiedź przy próbie dostępu do statystyk."
+msgstr "Nie można oczytać odpowiedzi Stats."
 
 #: class.akismet-cli.php:159
 msgid "Currently unable to fetch stats. Please try again."
@@ -22,6 +62,10 @@ msgstr "Obecnie nie można pobrać statystyk. Spróbuj ponownie później."
 #: class.akismet-cli.php:134
 msgid "API key must be set to fetch stats."
 msgstr "Klucz API musi być ustawiony, aby pobrać statystyki."
+
+#: views/config.php:162
+msgid "To help your site with transparency under privacy laws like the GDPR, Akismet can display a notice to your users under your comment forms. This feature is disabled by default, however, you can turn it on above."
+msgstr "Aby pomóc witrynie w przejrzystości zgodnie z przepisami dotyczącymi ochrony prywatności takimi, jak RODO, Akismet może wyświetlać powiadomienie pod formularzem komentarza. Funkcja jest domyślnie wyłączona, ale można ją włączyć."
 
 #: views/config.php:160
 msgid "Do not display privacy notice."
@@ -38,6 +82,14 @@ msgstr "Polityka prywatności Akismeta"
 #: views/config.php:155
 msgid "Privacy"
 msgstr "Prywatność"
+
+#: class.akismet.php:1491
+msgid "This site uses Akismet to reduce spam. <a href=\"%s\" target=\"_blank\" rel=\"nofollow noopener\">Learn how your comment data is processed</a>."
+msgstr "Witryna wykorzystuje Akismet, aby ograniczyć spam. <a href=\"%s\" target=\"_blank\" rel=\"nofollow noopener\">Dowiedz się więcej jak przetwarzane są dane komentarzy</a>."
+
+#: class.akismet-admin.php:87
+msgid "We collect information about visitors who comment on Sites that use our Akismet anti-spam service. The information we collect depends on how the User sets up Akismet for the Site, but typically includes the commenter's IP address, user agent, referrer, and Site URL (along with other information directly provided by the commenter such as their name, username, email address, and the comment itself)."
+msgstr "Zbieramy informacje o odwiedzających, którzy publikują komentarze na stronach wykorzystujących usługę ochrony przed spamem Akismet. Informacje, które zbieramy zależą od tego, jak użytkownik skonfigurował Akismet dla strony, ale zwykle obejmują adres IP komentującego, jego user agent, adres odsyłający oraz adres strony (wraz z innymi informacjami dostarczonymi bezpośrednio przez komentującego, takimi jak jego imię, nazwa użytkownika i sama treść komentarza)."
 
 #: class.akismet.php:236
 msgid "Comment discarded."
@@ -58,6 +110,14 @@ msgstr "Klucz API witryny zostały wprowadzony na twardo i nie da się go zmieni
 #: class.akismet-rest-api.php:71 class.akismet-rest-api.php:80
 msgid "The time period for which to retrieve stats. Options: 60-days, 6-months, all"
 msgstr "Okres, w którym należy pobrać statystyki. Opcje: 60 dni, 6 miesięcy, całość"
+
+#: class.akismet-rest-api.php:56
+msgid "If true, show the number of approved comments beside each comment author in the comments list page."
+msgstr "Pokazuj liczbę zatwierdzonych komentarzy obok każdego autora na stronie z listą komentarzy."
+
+#: class.akismet-rest-api.php:51
+msgid "If true, Akismet will automatically discard the worst spam automatically rather than putting it in the spam folder."
+msgstr "Włączone pozwoli na automatyczne odrzucanie najgorszy spam, zamiast przenoszenia do katalogu ze spamem."
 
 #: class.akismet-rest-api.php:27 class.akismet-rest-api.php:101
 #: class.akismet-rest-api.php:114 class.akismet-rest-api.php:127
@@ -85,6 +145,10 @@ msgstr "Konfiguracja ręczna"
 msgid "On this page, you are able to update your Akismet settings and view spam stats."
 msgstr "Na stronie możesz aktualizować ustawienia Akismeta i przeglądać statystyki spamu."
 
+#. Description of the plugin
+msgid "Used by millions, Akismet is quite possibly the best way in the world to <strong>protect your blog from spam</strong>. It keeps your site protected even while you sleep. To get started: activate the Akismet plugin and then go to your Akismet Settings page to set up your API key."
+msgstr "Używany przez miliony, Akismet jest być może najlepszym rozwiązaniem na świecie w celu <strong>ochrony bloga przed spamem</strong>. Chroni witrynę nawet wtedy kiedy śpisz. Aby rozpocząć: aktywuj wtyczkę Akismet i następnie przejdź do strony konfiguracji Akismet, aby ustawić klucz API."
+
 #. Plugin Name of the plugin
 #: class.akismet-admin.php:112 class.akismet-admin.php:115
 msgid "Akismet Anti-Spam"
@@ -107,6 +171,10 @@ msgstr "Połączono jako: %s."
 #: views/connect-jp.php:53 views/connect-jp.php:65
 msgid "Connect with Jetpack"
 msgstr "Połącz z Jetpackiem"
+
+#: views/connect-jp.php:12 views/connect-jp.php:25 views/connect-jp.php:48
+msgid "Use your Jetpack connection to set up Akismet."
+msgstr "Użyj połączenia z Jetpackiem aby ustawić Akismet."
 
 #: views/title.php:2
 msgid "Eliminate spam from your site"
@@ -132,6 +200,14 @@ msgstr "Szczegółowe statystyki"
 msgid "Statistics"
 msgstr "Statystyka"
 
+#: class.akismet-admin.php:1189
+msgid "Used by millions, Akismet is quite possibly the best way in the world to <strong>protect your blog from spam</strong>. It keeps your site protected even while you sleep. To get started, just go to <a href=\"admin.php?page=akismet-key-config\">your Akismet Settings page</a> to set up your API key."
+msgstr "Używany przez miliony, Akismet jest być może najlepszym rozwiązaniem na świecie stworzonym w celu <strong>ochrony bloga przed spamem</strong>. Chroni witrynę nawet wtedy kiedy śpisz. Aby rozpocząć, przejdź do <a href=\"admin.php?page=akismet-key-config\">strony konfiguracji Akismet</a>, aby ustawić klucz API."
+
+#: class.akismet-admin.php:1186
+msgid "Used by millions, Akismet is quite possibly the best way in the world to <strong>protect your blog from spam</strong>. Your site is fully configured and being protected, even while you sleep."
+msgstr "Używany przez miliony, Akismet jest być może najlepszym rozwiązaniem na świecie w celu <strong>ochrony bloga przed spamem</strong>. Witryna jest w pełni skonfigurowana i jest chroniona, nawet wtedy kiedy śpisz."
+
 #: class.akismet-admin.php:1078
 msgid "%s comment was caught as spam."
 msgid_plural "%s comments were caught as spam."
@@ -139,12 +215,20 @@ msgstr[0] "%s komentarz został oznaczony jako spam."
 msgstr[1] "%s komentarze zostały oznaczone jako spam."
 msgstr[2] "%s komentarzy zostało oznaczonych jako spam."
 
+#: class.akismet-admin.php:1075
+msgid "No comments were caught as spam."
+msgstr "Nie znaleziono komentarzy do oznaczenia jako spam."
+
 #: class.akismet-admin.php:1071
 msgid "Akismet checked %s comment."
 msgid_plural "Akismet checked %s comments."
 msgstr[0] "Akismet sprawdził %s komentarz."
 msgstr[1] "Akismet sprawdził %s komentarze."
 msgstr[2] "Akismet sprawdził %s komentarzy."
+
+#: class.akismet-admin.php:1068
+msgid "There were no comments to check. Akismet will only check comments awaiting moderation."
+msgstr "Brak komentarzy do sprawdzenia. Akismet sprawdza jedynie komentarze w kolejce oczekujących."
 
 #: class.akismet-admin.php:410
 msgid "Checking for Spam"
