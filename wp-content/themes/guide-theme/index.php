@@ -204,7 +204,7 @@
     <script src="<?php bloginfo('template_url'); ?>/js/bootstrap.bundle.min.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/js/jquery.validate.min.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/js/main.js"></script>
-    <!-- <script src="ttps://kit.fontawesome.com/1cc53aee27.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/1cc53aee27.js" crossorigin="anonymous"></script>
 
 <?php wp_footer(); ?>
 </body>
