@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/styles.css" />
 
     <title>Guide wp-theme</title>
+
+<?php wp_head(); ?>
 </head>
 
 <body data-spy="scroll" data-target="#navbar" data-offset="120">
@@ -204,6 +206,7 @@
     <script src="<?php bloginfo('template_url'); ?>/js/main.js"></script>
     <!-- <script src="ttps://kit.fontawesome.com/1cc53aee27.js" crossorigin="anonymous"></script> -->
 
+<?php wp_footer(); ?>
 </body>
 
 </html>
