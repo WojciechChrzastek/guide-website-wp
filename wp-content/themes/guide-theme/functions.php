@@ -39,3 +39,7 @@ function disable_emojis_tinymce( $plugins ) {
 }
 
 add_action('init', 'disable_emoji_feature');
+
+
+// Disable Gutenberg editor, enable classic one
+add_filter('use_block_editor_for_post', '__return_false', 10);
