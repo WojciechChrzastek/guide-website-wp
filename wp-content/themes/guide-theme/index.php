@@ -1,49 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+/**
+ * The main template file for guide theme.
+ */
 
-<head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- <script async src=""></script>
-    <script></script> -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Guide wp-theme" />
-    <meta name="keywords" content="guide wp-theme" />
-    <meta name="author" content="Wojciech Chrzastek" />
-    <meta name="copyright" content="Wojciech Chrzastek" />
-    <meta name="robots" content="index, follow" />
-    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/styles.css" />
-
-    <title>Guide wp-theme</title>
-
-<?php wp_head(); ?>
-</head>
-
-<body data-spy="scroll" data-target="#navbar" data-offset="120">
-
-    <header>
-        <nav id="navbar" class="navbar fixed-top navbar-expand-sm navbar-dark bg-light">
-            <div class="container">
-                <a class="navbar-brand" href="#top">
-                    <div>Wojciech Chrzastek<small class="font-weight-light"><br>Malaga guide</small></div>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <div class="navbar-nav">
-                        <a class="nav-item nav-link" href="#trips">Trips</a>
-                        <a class="nav-item nav-link" href="#news">News</a>
-                        <a class="nav-item nav-link" href="#about-me">About&nbsp;me</a>
-                        <a class="nav-item nav-link" href="#contact">Contact</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
+get_header();
+?>
 
     <button onclick="topFunction()" id="scrollButton" title="Scroll up"><i class="fas fa-angle-up"></i></i></button>
 
