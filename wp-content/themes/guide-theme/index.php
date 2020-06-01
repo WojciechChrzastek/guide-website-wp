@@ -149,25 +149,5 @@ get_header();
         </form>
     </section>
 
-    <footer>
-        <ul class="list-group list-group-horizontal">
-            <li>
-                <a href="https://github.com/WojciechChrzastek" target="_blank"><i class="fab fa-github-square"></i></a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/wojciech-chrzastek/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            </li>
-        </ul>
-        <p class="font-weight-light">&copy;<script>document.write(new Date().getFullYear())</script> Wojciech Chrzastek</p>
-    </footer>
-
-    <script src="<?php bloginfo('template_url'); ?>/js/jquery-3.5.1.min.js"></script>
-    <script src="<?php bloginfo('template_url'); ?>/js/bootstrap.bundle.min.js"></script>
-    <script src="<?php bloginfo('template_url'); ?>/js/jquery.validate.min.js"></script>
-    <script src="<?php bloginfo('template_url'); ?>/js/main.js"></script>
-    <script src="https://kit.fontawesome.com/1cc53aee27.js" crossorigin="anonymous"></script>
-
-<?php wp_footer(); ?>
-</body>
-
-</html>
+<?php
+get_footer();
