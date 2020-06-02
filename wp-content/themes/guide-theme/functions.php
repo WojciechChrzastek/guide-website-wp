@@ -43,3 +43,16 @@ add_action('init', 'disable_emoji_feature');
 
 // Disable Gutenberg editor, enable classic one
 add_filter('use_block_editor_for_post', '__return_false', 10);
+
+
+// Theme settings
+function theme_setup() {
+	
+	add_theme_support( 'title-tag' );
+
+}
+
+function reg_mymenu() {
+	register_nav_menu('header-menu',__( 'Main menu' ));
+  }
+  add_action( 'init', 'reg_mymenu');

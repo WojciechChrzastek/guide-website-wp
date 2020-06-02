@@ -12,12 +12,12 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
-		<title><?php wp_title(); ?></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 		<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<!-- Should be set via wp -->
-		<!-- <meta name="description" content="Guide wp-theme" />
+		<!-- <title><?php wp_title(); ?></title>
+		<meta name="description" content="Guide wp-theme" />
 		<meta name="keywords" content="guide wp-theme" />
    		<meta name="author" content="Wojciech Chrzastek" />
     	<meta name="copyright" content="Wojciech Chrzastek" />
@@ -42,27 +42,20 @@
 
 		<header id="site-header" class="header-footer-group" role="banner">
 
-				<div class="header-navigation-wrapper">
-
-        			<nav id="navbar" class="navbar fixed-top navbar-expand-sm navbar-dark bg-light">
-        			    <div class="container">
-        			        <a class="navbar-brand" href="#top">
-        			            <div>Wojciech Chrzastek<small class="font-weight-light"><br>Malaga guide</small></div>
-        			        </a>
-        			        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        			            <span class="navbar-toggler-icon"></span>
-        			        </button>
-        			        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        			            <div class="navbar-nav">
-        			                <a class="nav-item nav-link" href="#trips">Trips</a>
-        			                <a class="nav-item nav-link" href="#news">News</a>
-        			                <a class="nav-item nav-link" href="#about-me">About&nbsp;me</a>
-        			                <a class="nav-item nav-link" href="#contact">Contact</a>
-        			            </div>
-        			        </div>
-        			    </div>
-        			</nav>
-
+			<nav id="navbar" class="navbar fixed-top navbar-expand-sm navbar-dark bg-light">
+				<div class="container">
+					<a class="navbar-brand" href="#top">
+        		        <div>Wojciech Chrzastek<small class="font-weight-light"><br>Malaga guide</small></div>
+        		    </a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        		        <span class="navbar-toggler-icon"></span>
+        		    </button>
+					<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+						<div class="navbar-nav">
+							<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+						</div>
+					</div>
 				</div>
+			</nav>
 
 		</header>
