@@ -1,5 +1,5 @@
 //-----NAVBAR-COLLAPSE-----
-$("#menu-header-menu")
+$("#menu-header-menu-1")
   .find("a")
   .on("click", function () {
     $(".navbar-collapse").collapse("hide");

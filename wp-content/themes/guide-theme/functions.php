@@ -52,7 +52,12 @@ function theme_setup() {
 
 }
 
-function reg_mymenu() {
-	register_nav_menu('header-menu',__( 'Main menu' ));
+/*Link Navwalker for Bootstrap nav*/
+  require_once('class-wp-bootstrap-navwalker.php');
+
+/*Navigation Menus*/
+function register_my_menu() {
+	register_nav_menu('header-menu',__( 'Header Menu' ));
   }
-  add_action( 'init', 'reg_mymenu');
+  add_action( 'init', 'register_my_menu' );
+/*End*/

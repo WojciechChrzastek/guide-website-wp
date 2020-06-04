@@ -261,6 +261,10 @@ footer p {
   background-color: #007bba !important;
 }
 
+.navlink {
+  color: 255, 255, 255, 0.5 !important;
+}
+
 footer {
   background-color: #1f2a2d !important;
 }

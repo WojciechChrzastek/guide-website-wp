@@ -41,19 +41,39 @@
 		?>
 
 		<header id="site-header" class="header-footer-group" role="banner">
+
 			<nav id="navbar" class="navbar fixed-top navbar-expand-sm navbar-dark bg-light">
-				<div class="container">
-					<a class="navbar-brand" href="#top">
-        		        <div>Wojciech Chrzastek<small class="font-weight-light"><br>Malaga guide</small></div>
-        		    </a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        		        <span class="navbar-toggler-icon"></span>
-					</button>
+				<div class="container">	
+
+					<!-- Brand and toggle button -->
+						<a class="navbar-brand" href="#top">
+							<div>Wojciech Chrzastek<small class="font-weight-light"><br>Malaga guide</small></div>
+						</a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+					<!-- End -->
+
+					<!-- Website links -->
 					<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 						<div class="navbar-nav">
-							<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+							<?php
+								wp_nav_menu( array(
+								'menu'              => 'primary',
+								'theme_location'    => 'header-menu',
+								'depth'             => 2,
+								'container'         => 'div',
+								'container_class'   => '',
+								'container_id'      => '',
+								'menu_class'        => 'navbar-nav mr-auto',
+								'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+								'walker'            => new wp_bootstrap_navwalker())
+								);
+							?>
 						</div>
 					</div>
+					<!-- End -->
+
 				</div>
 			</nav>
 
