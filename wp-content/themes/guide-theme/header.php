@@ -16,9 +16,7 @@
 		<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<!-- Should be set via wp -->
-		<!-- <title><?php wp_title(); ?></title>
-		<meta name="description" content="Guide wp-theme" />
-		<meta name="keywords" content="guide wp-theme" />
+		<!-- <meta name="keywords" content="guide wp-theme" />
    		<meta name="author" content="Wojciech Chrzastek" />
     	<meta name="copyright" content="Wojciech Chrzastek" />
     	<meta name="robots" content="index, follow" /> -->

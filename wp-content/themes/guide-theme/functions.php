@@ -1,6 +1,5 @@
 <?php
 function disable_emoji_feature() {
-	
 	// Prevent Emoji from loading on the front-end
 	remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 	remove_action( 'wp_print_styles', 'print_emoji_styles' );
@@ -22,13 +21,7 @@ function disable_emoji_feature() {
 	// Disable from TinyMCE editor. Currently disabled in block editor by default
 	add_filter( 'tiny_mce_plugins', 'disable_emojis_tinymce' );
 
-	/** Finally, prevent character conversion too
-         ** without this, emojis still work 
-         ** if it is available on the user's device
-	 */
-
 	add_filter( 'option_use_smilies', '__return_false' );
-
 }
 
 function disable_emojis_tinymce( $plugins ) {
@@ -40,17 +33,11 @@ function disable_emojis_tinymce( $plugins ) {
 
 add_action('init', 'disable_emoji_feature');
 
-
 // Disable Gutenberg editor, enable classic one
 add_filter('use_block_editor_for_post', '__return_false', 10);
 
-
-// Theme settings
-function theme_setup() {
-	
-	add_theme_support( 'title-tag' );
-
-}
+// Provide title and description via wp
+add_theme_support( 'title-tag' );
 
 /*Link Navwalker for Bootstrap nav*/
   require_once('class-wp-bootstrap-navwalker.php');
