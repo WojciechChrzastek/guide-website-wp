@@ -41,7 +41,6 @@
 		?>
 
 		<header id="site-header" class="header-footer-group" role="banner">
-
 			<nav id="navbar" class="navbar fixed-top navbar-expand-sm navbar-dark bg-light">
 				<div class="container">
 					<a class="navbar-brand" href="#top">
@@ -49,7 +48,7 @@
         		    </a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         		        <span class="navbar-toggler-icon"></span>
-        		    </button>
+					</button>
 					<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 						<div class="navbar-nav">
 							<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>

@@ -1,7 +1,9 @@
 //-----NAVBAR-COLLAPSE-----
-$(".navbar-nav>a").on("click", function () {
-  $(".navbar-collapse").collapse("hide");
-});
+$("#menu-header-menu")
+  .find("a")
+  .on("click", function () {
+    $(".navbar-collapse").collapse("hide");
+  });
 
 //-----SCROLL-BUTTON-----
 mybutton = document.getElementById("scrollButton");
