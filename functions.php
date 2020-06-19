@@ -40,7 +40,7 @@ add_filter('use_block_editor_for_post', '__return_false', 10);
 add_theme_support( 'title-tag' );
 
 /*Link Navwalker for Bootstrap nav*/
-  require_once('class-wp-bootstrap-navwalker.php');
+  require_once('wp-bootstrap-navwalker.php');
 
 /*Navigation Menus*/
 function register_my_menu() {
