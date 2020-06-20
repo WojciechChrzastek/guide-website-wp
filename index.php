@@ -6,8 +6,6 @@
 get_header();
 ?>
 
-    <button onclick="topFunction()" id="scrollButton" title="Scroll up"><i class="fas fa-angle-up"></i></i></button>
-
     <section id="top" class="container-fluid">
         <div class="background-image" style="background-image: url('img/malaga-panoramic.jpg');"></div>
         <h1>Welcome to Malaga!!</h1>
