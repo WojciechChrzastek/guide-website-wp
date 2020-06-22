@@ -39,6 +39,9 @@ add_filter('use_block_editor_for_post', '__return_false', 10);
 // Provide title and description via wp
 add_theme_support( 'title-tag' );
 
+//Enable post-thumbnails
+add_theme_support( 'post-thumbnails' );
+
 /*Link Navwalker for Bootstrap nav*/
   require_once('wp-bootstrap-navwalker.php');
 
@@ -48,3 +51,4 @@ function register_my_menu() {
   }
   add_action( 'init', 'register_my_menu' );
 /*End*/
+
