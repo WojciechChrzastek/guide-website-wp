@@ -306,3 +306,16 @@ footer a:hover {
   opacity: 1;
   color: rgba(230, 241, 243, 0.8) !important;
 }
+
+/*-----BLOG-POSTS-INDEX-----*/
+
+#blog-posts-index {
+  max-width: 850px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  #blog-posts-index h4 {
+    text-align: left;
+    font-size: larger;
+}
