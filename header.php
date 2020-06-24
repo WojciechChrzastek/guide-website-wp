@@ -40,7 +40,7 @@
 				<div class="container">	
 
 					<!-- Brand and toggle button -->
-						<a class="navbar-brand" href="#top">
+						<a class="navbar-brand" href="/guide-website-wp">
 							<div>Wojciech Chrzastek<small class="font-weight-light"><br>Malaga guide</small></div>
 						</a>
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
